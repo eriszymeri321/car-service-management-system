@@ -48,7 +48,7 @@ Contributions and suggestions are welcome. To work on the project, fork the repo
 
 The application can use `data/servis.json` as a legacy import or backup source when initializing an empty database. The JSON file is not the primary data store once the application is connected to MySQL/MariaDB.
 
-The current development configuration contains a demo administrator account (`admin` / `servis2026`). Change demo credentials and database settings before using the application with real data. Do not use the demo account in a production deployment.
+The administrator username is `admin`.
 
 ## Project layout
 
