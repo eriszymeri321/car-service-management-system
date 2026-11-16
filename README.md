@@ -43,7 +43,7 @@ Contributions and suggestions are welcome. To work on the project, fork the repo
 
 1. Clone or download the project into your local development environment.
 2. Copy `config/database.example.php` to `config/database.php`, then set the connection values (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, and `DB_PASS`) for your local database.
-3. Make sure the database has the tables expected by the application. The repository currently does not include a standalone SQL schema or database migration setup, so database initialization may require additional setup.
+3. Create an empty MySQL/MariaDB database, then import `database/schema.sql` into it using phpMyAdmin or the MySQL command line. The application creates its extra inventory and workshop tables on first load.
 4. Serve the project using Apache, or run `php -S localhost:8000` from the project directory and open `http://localhost:8000`.
 
 The application can use `data/servis.json` as a legacy import or backup source when initializing an empty database. The JSON file is not the primary data store once the application is connected to MySQL/MariaDB.
